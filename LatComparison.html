@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Latitude Comparison</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+</head>
+
+<body>
+
+<nav class="navbar-custom">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<a class="navbar-brand" href="index.html">Latitude</a>
+    	</div>
+	<ul class="nav navbar-nav navbar-right">
+	    <li class="dropdown">
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		      Plots <span class="caret"></span></a>
+		      <ul class="dropdown-menu" role="menu">
+		        <li><a href="LatTemperature.html">Temperature</a></li>
+		        <li><a href="LatCloudineess.html">Cloudiness</a></li>
+		        <li><a href="LatHumidity.html">Humidity</a></li>    
+		        <li><a href="LatWindSpeed.html">Wind Speed</a></li>                     
+		      </ul>
+	    <li class="active"><a href="LatComparison.html">Comparisons</a></li>
+	    <li class="active"><a href="/LatData.html">Data</a></li>                     
+	    </li>
+	  </ul>
+	</div>
+</nav>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<h1>Comparison: Latitude vs. X</h1>
+		<h3>Click on any graph to get an in-depth analysis.</h3>
+      	<div class="img col-xs-12 col-sm-8 col-md-4">
+			<h3>Latitude vs. Temperature</h3>
+			<a href="LatTemperature.html"><img src="Lat vs Temp.png" class="img-rounded" alt="LatitudeTemp"></a>
+<!-- 		</div>
+      	<div class="img col-xs-12 col-sm-12 col-md-3" style="background-color:lightblue;"> -->
+   			<h3>Latitude vs. Humidity</h3>
+			<a href="LatHumidity.html"><img src="Lat vs Humidity.png" class="img-rounded" alt="LatitudeHumdity"></a>
+		</div>
+      	<div class="img col-xs-12 col-sm-8 col-md-4">
+			<h3>Latitude vs. Cloudiness</h3>
+			<a href="LatCloudineess.html"><img src="Lat vs Cloudiness.png" class="img-rounded" alt="LatitudeCloudiness"></a>
+<!-- 		</div>
+      	<div class="img col-xs-12 col-sm-12 col-md-3" style="background-color:lightblue;"> -->
+			<h3>Latitude vs. Wind Speed</h3>
+			<a href="LatWindSpeed.html"><img src="Lat vs Wind Speed.png" class="img-rounded" alt="LatitudeWindSpeed"></a>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

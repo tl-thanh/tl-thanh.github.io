@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Latitude Temperature</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bkground">
+
+<nav class="navbar-custom">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<a class="navbar-brand" href="index.html">Latitude</a>
+    	</div>
+	<ul class="nav navbar-nav navbar-right">
+	    <li class="dropdown">
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		      Plots <span class="caret"></span></a>
+		      <ul class="dropdown-menu" role="menu">
+		        <li><a href="LatTemperature.html">Latitude vs. Temperature</a></li>
+		        <li><a href="LatCloudineess.html">Latitude vs. Cloudiness</a></li>
+		        <li><a href="LatHumidity.html">Latitude vs. Humidity</a></li>    
+		        <li><a href="LatWindSpeed.html">Latitude vs. Wind Speed</a></li>                   
+		      </ul>
+	    <li class="active"><a href="LatComparison.html">Comparisons</a></li>
+	    <li class="active"><a href="LatData.html">Data</a></li>                     
+	    </li>
+	  </ul>
+	</div>
+</nav>
+
+<div class="container-fluid top-buffer">
+	<div class="row-fluid">
+		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h1 class="page-header text-blue" align="center"><strong>Latitude vs. Humidity</h1>
+				<img src="Lat vs Humidity.png" class="img-rounded img-responsive center-block">
+				<h3 class="lead">
+					<p>From this graph, there is no correlation between these two variables.  The humidity of a city is not dependent on whether one is or is not near the equator, at 0 degree Latitude.  
+					<br/>
+	      		</h3>
+	      	</div>	
+	    </div>
+		<div class="col-md-6 col-sm-6 col-xs-6 boxbkground">
+			<h2 class="page-header text-blue" align="center"><strong>Visualizations</h2>
+			<div class="row=fluid">
+				<div class="col-md-6 col-sm-6 col-xs-6" align="center">
+					<h3>vs. Temperature</h3>
+					<a href="LatTemperature.html"><img src="Lat vs Temp.png" class="img-rounded img-responsive" alt="LatitudeTemp" width="304" height="236"></a>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6" align="center">
+					<h3>vs. Humidity</h3>
+					<a href="LatHumidity.html"><img src="Lat vs Humidity.png" class="img-rounded img-responsive" alt="LatitudeHumdity" width="304" height="236"></a>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6" align="center">
+					<h3>vs. Cloudiness</h3>
+					<a href="LatCloudineess.html"><img src="Lat vs Cloudiness.png" class="img-rounded img-responsive" alt="LatitudeCloudiness" width="304" height="236"></a>
+				</div>	
+				<div class="col-md-6 col-sm-6 col-xs-6" align="center">	
+					<h3>vs. Wind Speed</h3>
+					<a href="LatWindSpeed.html"><img src="Lat vs Wind Speed.png" class="img-rounded img-responsive" alt="LatitudeWindSpeed" width="304" height="236"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
