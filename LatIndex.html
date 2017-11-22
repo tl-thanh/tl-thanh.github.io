@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Latitude Cloudiness</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="bkground body-text">
+
+<nav class="navbar-custom">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<a class="navbar-brand" href="index.html">Latitude</a>
+    	</div>
+	<ul class="nav navbar-nav navbar-right">
+	    <li class="dropdown">
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+		      Plots <span class="caret"></span></a>
+		    <ul class="dropdown-menu" role="menu">
+		        <li><a href="LatTemperature.html">Latitude vs. Temperature</a></li>
+		        <li><a href="LatCloudineess.html">Latitude vs. Cloudiness</a></li>
+		        <li><a href="LatHumidity.html">Latitude vs. Humidity</a></li>    
+		        <li><a href="LatWindSpeed.html">Latitude vs. Wind Speed</a></li>
+		    </ul>
+	    <li class="active"><a href="LatComparison.html">Comparisons</a></li>
+	    <li class="active"><a href="LatData.html">Data</a></li>                     
+	    </li>
+	  </ul>
+	</div>
+</nav>
+
+<div class="container-fluid top-buffer">
+	<div class="row-fluid">
+		<div class="col-md-7 col-sm-7 col-xs-7">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<h1 class="page-header text-blue" align="center"><strong>Summary: Latitude vs. X</h1>
+				<img src="Lat vs Temp.png" class="img-rounded img-responsive pull-left" class="alignleft" alt="graph" width="500" height="350">
+				<h2 class="lead">
+					<br/>
+					<p>The purpose of this project is to analyze how the weather changes as one get closer to the equator.  To accomplish this analysis, data was pulled from OpenWeatherMap API.  A dataset was collected for at least 500 unqiue cities.</p>
+					<br/>
+	      			<p>After assembling the dataset, Python Matplotlib was used to plot various aspects of the weather pattern vs. the lattitude of those cities.  Factors that were included in this analysis is the temperature, cloudiness, humidity and wind speed of the cities. </p>
+	      			<p>This site provides the source data and visualizations created as part of that analysis, as well as descriptions and explanations of any trends and correlations observed. </p>
+	      			<br/>
+	      			<p>The dataset was created from weather records dated 09/09/2017.</p>
+	      		</h2>
+	      	</div>	
+	    </div>
+		<div class="col-md-5 col-sm-5 col-xs-5 boxbkground">
+			<h2 class="page-header text-blue" align="center"><strong>Visualizations</h2>
+			<div class="row=fluid">
+				<div class="col-md-6 col-sm-12 col-xs-12" align="center">
+					<h3>vs. Temperature</h3>
+					<a href="LatTemperature.html"><img src="Lat vs Temp.png" class="img-rounded img-responsive" alt="LatitudeTemp" width="304" height="236"></a>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12" align="center">
+					<h3>vs. Humidity</h3>
+					<a href="LatHumidity.html"><img src="Lat vs Humidity.png" class="img-rounded img-responsive" alt="LatitudeHumdity" width="304" height="236"></a>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12" align="center">
+					<h3>vs. Cloudiness</h3>
+					<a href="LatCloudineess.html"><img src="Lat vs Cloudiness.png" class="img-rounded img-responsive" alt="LatitudeCloudiness" width="304" height="236"></a>
+				</div>	
+				<div class="col-md-6 col-sm-12 col-xs-12" align="center">	
+					<h3>vs. Wind Speed</h3>
+					<a href="LatWindSpeed.html"><img src="Lat vs Wind Speed.png" class="img-rounded img-responsive" alt="LatitudeWindSpeed" width="304" height="236"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
