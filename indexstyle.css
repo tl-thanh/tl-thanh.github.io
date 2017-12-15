@@ -1,11 +1,14 @@
 .resumebkg {background-color: #D3D3D3;}
 
-.jobtitle {margin-bottom: 0!important;}
+.jobtitle {
+    margin-bottom: 0!important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
 .subheading {
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Saira Extra Condensed',serif;
     font-size: 1.35rem;
 }
 
@@ -15,15 +18,13 @@
 
 .text-grey {color:#778899;}
 
-.body-text {font-family: Georgia;}
+.body-text {font-family: 'Saira Extra Condensed',serif;}
 
 .alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; float: left; }
 
 .aligncenter { padding: 4px; margin: 0 7px 2px 0; display: inline; float: center; }
 
 .bkground {background-color: #e3f2fd;}
-
-.boxbkground {background-color: white;}
 
 .col-md-12, .col-sm-12, .col-xs-12 {background-color: white;}
 
