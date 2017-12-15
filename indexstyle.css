@@ -6,7 +6,9 @@
 
 .boxbkground {background-color: #F0FFFF;}
 
-.col-md-12, .col-sm-12, .col-xs-12 {background-color: white;}
+.exbkg {background-color: #D3D3D3;}
+
+.col-md-12, .col-sm-12, .col-xs-12 {background-color: #DCDCDC;}
 
 .top-buffer { margin-top:50px;}
 
