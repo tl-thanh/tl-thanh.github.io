@@ -45,11 +45,6 @@
   h3{font-size: 15px;}
 }
 
-@media (min-width: 768px)
-section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-}
-
 .navbar-custom {
   background-color: #0088cc;
   border-color: #0072ab;
