@@ -1,3 +1,9 @@
+.pgheader {
+    margin-bottom: 0!important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .resumebkg {background-color: #D3D3D3;}
 
 .jobtitle {
