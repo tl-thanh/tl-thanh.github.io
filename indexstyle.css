@@ -42,6 +42,12 @@
 
 .td {border: 1px black solid; padding: 5px;}
 
+#footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+
 @media screen and (max-width: 575px) {
   h1{font-size: 35px;}
   h2{font-size: 20px;}
