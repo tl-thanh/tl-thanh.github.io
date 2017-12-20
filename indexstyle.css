@@ -48,6 +48,8 @@
     bottom:0;
 }
 
+.centercon {margin: auto;}
+
 @media screen and (max-width: 575px) {
   h1{font-size: 35px;}
   h2{font-size: 20px;}
