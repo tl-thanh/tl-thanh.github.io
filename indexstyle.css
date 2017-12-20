@@ -16,6 +16,11 @@
     font-weight: 700;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .subheading {
     text-transform: uppercase;
     font-weight: 500;
