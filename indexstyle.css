@@ -11,13 +11,13 @@
     padding-bottom: 5rem;
 }
 
-#resume .resume-timeline {
+/*#resume .resume-timeline {
     max-width: 980px;
 }
-
-.col-twelve, .col-full {
+*/
+/*.col-twelve, .col-full {
     width: 100%;
-}
+}*/
 
 #resume .resume-header {
     text-align: center;
@@ -26,7 +26,7 @@
 #resume .timeline-wrap {
     position: relative;
     margin-top: auto;
-    margin-bottom: auto;
+    /*margin-bottom: auto;*/
 }
 
 #resume .timeline-block {
@@ -39,7 +39,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: auto;
+    /*margin-bottom: 1rem;*/
     position: relative;
 }
 
@@ -57,14 +57,14 @@
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    left: 35%;
+    left: 47%;
     top: .9rem;
     margin-left: -2.4rem;
 }
 
 #resume .timeline-header {
     float: left;
-    width: 35%;
+    width: 47%;
     padding-right: 50px;
     text-align: right;
     position: absolute;
@@ -72,7 +72,7 @@
 }
 
 #resume .timeline-content {
-    margin-left: 35%;
+    margin-left: 47%;
     padding-left: 50px;
 }
 
@@ -82,7 +82,7 @@
 
 .jobtitle {
   margin-bottom: 0!important;
-/*   text-transform: uppercase; */
+  text-transform: uppercase;
   font-weight: 700;
 }
 
