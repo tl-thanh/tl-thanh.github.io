@@ -1,19 +1,89 @@
 .pgheader {
-    margin-bottom: 0!important;
-    text-transform: uppercase;
-    font-weight: 700;
+  margin-bottom: 0!important;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .resumebkg {background-color: #D3D3D3;}
+
+#resume {
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+}
+
+#resume .resume-timeline {
+    max-width: 980px;
+}
+
+.col-twelve, .col-full {
+    width: 100%;
+}
+
+#resume .resume-header {
+    text-align: center;
+}
+
+#resume .timeline-wrap {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#resume .timeline-block {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#resume .timeline-ico {
+    height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 35%;
+    top: .9rem;
+    margin-left: -2.4rem;
+}
+
+#resume .timeline-header {
+    float: left;
+    width: 35%;
+    padding-right: 50px;
+    text-align: right;
+    position: absolute;
+    top: .5rem;
+}
+
+#resume .timeline-content {
+    margin-left: 35%;
+    padding-left: 50px;
+}
 
 .edubkg {background-color: #FFF0F5;}
 
 .skillbkg {background-color: #e6fff2;}
 
 .jobtitle {
-    margin-bottom: 0!important;
-    text-transform: uppercase;
-    font-weight: 700;
+  margin-bottom: 0!important;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .grid-container {
@@ -22,9 +92,10 @@
 }
 
 .subheading {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.35rem;
+  margin-bottom: 0!important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.35rem;
 }
 
 .marbottom {margin-bottom: 1rem!important;}
