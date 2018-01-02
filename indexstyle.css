@@ -3,8 +3,6 @@
    height: 80%;
  }
 
-.pbartext {text-align: left;}
-
 .pgheader {
   margin-bottom: 0!important;
   text-transform: uppercase;
@@ -290,6 +288,8 @@
   left: -65px;
   transform: rotate(-360deg);
 }
+
+.pbartext {text-align: left;}
 
 @media screen and (max-width: 575px) {
   h1{font-size: 35px;}
