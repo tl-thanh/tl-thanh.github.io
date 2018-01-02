@@ -3,6 +3,8 @@
    height: 80%;
  }
 
+.pbartext {text-align: left;}
+
 .pgheader {
   margin-bottom: 0!important;
   text-transform: uppercase;
