@@ -4,20 +4,14 @@
   font-weight: 700;
 }
 
+.projbkg {background-color: #C0C0C0;}
+
 .resumebkg {background-color: #D3D3D3;}
 
 #resume {
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
-
-/*#resume .resume-timeline {
-    max-width: 980px;
-}
-*/
-/*.col-twelve, .col-full {
-    width: 100%;
-}*/
 
 #resume .resume-header {
     text-align: center;
@@ -49,6 +43,11 @@
     margin: 0 auto;
 }
 
+.carousel-inner {
+  width: 80%;
+  margin: auto;
+  }
+
 #resume .timeline-ico {
     height: 4.8rem;
     width: 4.8rem;
@@ -57,14 +56,14 @@
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    left: 48%;
+    left: 47%;
     top: .9rem;
     margin-left: -2.4rem;
 }
 
 #resume .timeline-header {
     float: left;
-    width: 48%;
+    width: 47%;
     padding-right: 50px;
     text-align: right;
     position: absolute;
@@ -72,13 +71,13 @@
 }
 
 #resume .timeline-content {
-    margin-left: 48%;
+    margin-left: 47%;
     padding-left: 50px;
 }
 
-.edubkg {background-color: #FFF0F5;}
+.edubkg {background-color: #ebfaf9;}
 
-.skillbkg {background-color: #e6fff2;}
+.skillbkg {background-color: #e6f2ff;}
 
 .jobtitle {
   margin-bottom: 0!important;
@@ -121,13 +120,168 @@
 .td {border: 1px black solid; padding: 5px;}
 
 #footer {
-    position:fixed;
+    position: fixed;
     right:0;
     bottom:0;
 }
 
-.centercon {
-    margin: auto;
+.chart-skills {
+  position: relative;
+  width: 350px;
+  height: 175px;
+}
+
+.chart-skills li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 90px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  animation-fill-mode: forwards;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+}
+
+.chart-skills li:nth-child(1) {
+  z-index: 9;
+  border-color: green;
+  animation-name: rotate-one;
+}
+ 
+.chart-skills li:nth-child(2) {
+  z-index: 9;
+  border-color: firebrick;
+  animation-name: rotate-two;
+  animation-delay: .4s;
+}
+ 
+.chart-skills li:nth-child(3) {
+  z-index: 92;
+  border-color: steelblue;
+  animation-name: rotate-three;
+  animation-delay: .8s;
+}
+ 
+.chart-skills li:nth-child(4) {
+  z-index: 91;
+  border-color: orange;
+  animation-name: rotate-four;
+  animation-delay: 1.2s;
+}
+
+.chart-skills li:nth-child(5) {
+  z-index: 89;
+  border-color: purple;
+  animation-name: rotate-five;
+  animation-delay: 1.6s;
+}
+
+.chart-skills li:nth-child(6) {
+  z-index: 88;
+  border-color: pink;
+  animation-name: rotate-six;
+  animation-delay: 2.0s;
+}
+
+@keyframes rotate-one {
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+ 
+@keyframes rotate-three {
+  0% {
+    transform: rotate(120deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+ 
+@keyframes rotate-four {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(240deg);
+  }
+}
+
+@keyframes rotate-five {
+  0% {
+    transform: rotate(240deg);
+  }
+  100% {
+    transform: rotate(300deg);
+  }
+}
+
+@keyframes rotate-six {
+  0% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.chart-skills li {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.chart-skills span {
+  position: absolute;
+  font-size: 1.7rem;
+}
+ 
+.chart-skills li:nth-child(1) span {
+  top: 20px;
+  left: -65px;
+  transform: rotate(-60deg);
+}
+ 
+.chart-skills li:nth-child(2) span {
+  top: 25px;
+  left: -55px;
+  transform: rotate(-120deg);
+}
+ 
+.chart-skills li:nth-child(3) span {
+  top: 35px;
+  left: -60px;
+  transform: rotate(-180deg);
+}
+ 
+.chart-skills li:nth-child(4) span {
+  top: 40px;
+  left: -75px;
+  transform: rotate(-240deg);
+}
+
+.chart-skills li:nth-child(5) span {
+  top: 35px;
+  left: -75px;
+  transform: rotate(-300deg);
+}
+
+.chart-skills li:nth-child(6) span {
+  top: 20px;
+  left: -65px;
+  transform: rotate(-360deg);
 }
 
 @media screen and (max-width: 575px) {
