@@ -9,9 +9,9 @@
   font-weight: 700;
 }
 
-.projbkg {background-color: #C0C0C0;}
+.projbkg {background-color: #e6f2ff;}
 
-.resumebkg {background-color: #D3D3D3;}
+.resumebkg {background-color: #e6f2ff;}
 
 #resume {
     padding-top: 3rem;
@@ -80,7 +80,7 @@
     padding-left: 50px;
 }
 
-.edubkg {background-color: #ebfaf9;}
+.edubkg {background-color: #e6f2ff;}
 
 .skillbkg {background-color: #e6f2ff;}
 
