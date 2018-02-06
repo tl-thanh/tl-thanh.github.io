@@ -9,9 +9,9 @@
   font-weight: 700;
 }
 
-.projbkg {background-color: #E6E6FA;}
+.projbkg {background-color: #e6e6e6;}
 
-.resumebkg {background-color:   #E6E6FA;}
+.resumebkg {background-color:   #e6e6e6;}
 
 #resume {
     padding-top: 3rem;
@@ -80,9 +80,9 @@
     padding-left: 50px;
 }
 
-.edubkg {background-color: #E6E6FA;}
+.edubkg {background-color: #e6e6e6;}
 
-.skillbkg {background-color: #E6E6FA;}
+.skillbkg {background-color: #e6e6e6;}
 
 .jobtitle {
   margin-bottom: 0!important;
@@ -114,9 +114,9 @@
 
 .aligncenter { padding: 4px; margin: 0 7px 2px 0; display: inline; float: center; }
 
-.bkground {background-color: #e3f2fd;}
+.bkground {background-color: #e6e6e6;}
 
-.col-md-12, .col-sm-12, .col-xs-12 {background-color: #FF5733}
+.col-md-12, .col-sm-12, .col-xs-12 {background-color: #e6e6e6}
 
 .top-buffer { margin-top:50px;}
 
