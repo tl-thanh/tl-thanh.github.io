@@ -31,6 +31,82 @@
    border: 2px solid black;
 }
 
+/*Resume CSS*/
+
+.pgheader {
+  margin-bottom: 0!important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#resume {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+#resume .resume-header {
+    text-align: center;
+}
+
+#resume .timeline-wrap {
+    position: relative;
+    margin-top: auto;
+}
+
+#resume .timeline-block {
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+#resume .timeline-ico {
+    height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #e6f2ff;
+    position: absolute;
+    left: 44%;
+    top: .9rem;
+    margin-left: -2.4rem;
+}
+
+#resume .timeline-header {
+    float: left;
+    width: 47%;
+    padding-right: 75px;
+    text-align: right;
+    position: absolute;
+    top: .2rem;
+}
+
+#resume .timeline-content {
+    margin-left: 45%;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.jobtitle {
+  margin-bottom: 0!important;
+  font-weight: 700;
+}
+
+.subheading {
+  margin-bottom: 0!important;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /*margin-bottom: 1rem;*/
+    position: relative;
+}
+
 /*Nav Bar CSS*/
 
 .navbar-custom {
