@@ -24,7 +24,7 @@
 				<img src="https://tl-thanh.github.io/images/home_logo.png" alt="home" width="20" height="20" hspace="5"></li></a>
 			<li class="active"><a href="#pro">Programming Projects</a></li>
 			<li class="active"><a href="#py">Python Codes</a></li>
-			<li class="active"><a href=a href="sql.html">SQL Queries</a></li>
+			<li class="active"><a href="sql.html">SQL Queries</a></li>
 			<li class="active"><a href="#res">Resume</a></li>
 			<li class="active"><a href="index.html">Contact Me</a></li>
 		</div>
@@ -59,7 +59,8 @@
 					</strong>
 					<br>
 					<br>
-					<strong>2. </strong>
+					<strong>2. </strong>Write a query to to get the list of users who took the a training lesson more than once in the same day, grouped by user and training lesson, each ordered from the most recent lesson date to oldest date.
+					<br>
 					<br>
 					Table: users
 					<br>
@@ -180,9 +181,6 @@
 						</tr>
 					</table>
 					<br>
-					Write a query to to get the list of users who took the a training lesson more than once in the same day, grouped by user and training lesson, each ordered from the most recent lesson date to oldest date.
-					<br>
-					<br>
 					<strong>
 					SELECT U.user_id, username, training_id, training_date, count(user_training_id) AS count <br>
 					FROM users U JOIN training_details T <br>
@@ -193,7 +191,8 @@
 					</strong>
 					<br>
 					<br>
-					<strong>3. </strong>
+					<strong>3. </strong>Write a SQL query to fetch employee names having salary greater than or equal to 5000 and less than or equal 10000.
+					<br>
 					<br>
 					Table: EmployeeDetails
 					<table class="tbl">
@@ -247,9 +246,6 @@
 						</tr>
 					</table>
 					<br>
-					Write a SQL query to fetch employee names having salary greater than or equal to 5000 and less than or equal 10000.
-					<br>
-					<br>
 					<strong>
 					SELECT FullName <br>
 					FROM EmployeeDetails <br>
@@ -260,9 +256,10 @@
 					</strong>
 					<br>
 					<br>
+					</h4>
+					<h3><strong><a href="https://github.com/tl-thanh/sql-homework">*Click here for my Github Repository that contains other SQL Queries*</a></strong></h3>
 
-
-			</div>	
+			</div>
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
 			</div>
 		</div>
