@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+	<title>SQL Queries</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="piechart.css">	
+</head>
+
+<a name="top"></a>
+
+<body class="bkground body-text">
+	<nav class="navbar-custom">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">Thanh Le</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="active"><a href="https://tl-thanh.github.io/index.html">
+				<img src="https://tl-thanh.github.io/images/home_logo.png" alt="home" width="20" height="20" hspace="5"></li></a>
+			<li class="active"><a href="#pro">Programming Projects</a></li>
+			<li class="active"><a href="#py">Python Codes</a></li>
+			<li class="active"><a href=a href="https://tl-thanh.github.io/sql.html">SQL Queries</a></li>
+			<li class="active"><a href="#res">Resume</a></li>
+			<li class="active"><a href="https://tl-thanh.github.io/index.html">Contact Me</a></li>
+		</div>
+	</nav>
+	
+	<div id="footer">
+		<a href="#top">
+		<img src="https://tl-thanh.github.io/images/top_logo.png" alt="back_to_top" width="50" height="50" hspace="15">
+		</a>
+	</div>
+
+	<div class="container-fluid bkg">
+		<div class="row-fluid">
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+			</div>
+			<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10" align="center">
+				<h2><strong>SQL QUERIES</strong>
+				<br>
+				This section is an attempt at show-casing my foundation in SQL.</h2>
+				<div align="left">
+					<br>
+					<h4><strong>1. </strong>There are three data tables A, B and C. A and B share a common variable ID1. B and C share a common variable ID2. 
+					<br>
+					Write a query to get this result: select everything from Table B, with matching records in both Table A and B, but not in Table C.
+					<br>
+					<br>
+					<strong>
+					SELECT * FROM B <br>
+					LEFT JOIN A <br>
+					ON B.ID1 = A.ID1 <br>
+					WHERE B.ID2 NOT IN (SELECT ID2 FROM C) <br>
+					</strong>
+					<br>
+					<br>
+					<strong>2. </strong>
+					<br>
+					Table: users
+					<br>
+					<table class="tbl">
+					  <tr>
+					    <th>user_id</th>
+					    <th>username</th>
+					  </tr>
+					  <tr>
+					    <td>1</td>
+					    <td>John Doe</td>
+					  </tr>
+					  <tr>
+					    <td>2</td>
+					    <td>Jane Don</td>
+					  </tr>
+					  <tr>
+					    <td>3</td>
+					    <td>Alice Jones</td>
+					  </tr>
+					    <tr>
+					    <td>4</td>
+					    <td>Lisa Romero</td>
+					  </tr>
+					</table>
+					<br>
+					Table: training_details
+					<table class="tbl">
+						<tr>
+							<th>user_training_id</th>
+							<th>user_id</th>
+							<th>training_id</th>
+							<th>training_date</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2</td>
+							<td>1</td>
+							<td>2015-08-03</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>3</td>
+							<td>2</td>
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>4</td>
+							<td>2</td>
+							<td>2015-08-04</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>2</td>
+							<td>2</td>
+							<td>2015-08-03</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>1</td>
+							<td>1</td>
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>3</td>
+							<td>2</td>
+							<td>2015-08-04</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>4</td>
+							<td>3</td>
+							<td>2015-08-03</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>1</td>
+							<td>4</td>
+							<td>2015-08-03</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>3</td>
+							<td>1</td>
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>4</td>
+							<td>2</td>
+							<td>2015-08-04</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>3</td>
+							<td>2</td>  
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>1</td>
+							<td>1</td>
+							<td>2015-08-02</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>4</td>
+							<td>3</td>
+							<td>2015-08-03</td>
+						</tr>
+					</table>
+					<br>
+					Write a query to to get the list of users who took the a training lesson more than once in the same day, grouped by user and training lesson, each ordered from the most recent lesson date to oldest date.
+					<br>
+					<br>
+					<strong>
+					SELECT U.user_id, username, training_id, training_date, count(user_training_id) AS count <br>
+					FROM users U JOIN training_details T <br>
+					ON T.user_id = U.user_id <br>
+					GROUP BY U.user_id, username, training_id, training_date <br>
+					HAVING count(user_training_id) > 1 <br>
+					ORDER BY training_date DESC; <br>
+					</strong>
+					<br>
+					<br>
+					<strong>3. </strong>
+					<br>
+					Table: EmployeeDetails
+					<table class="tbl">
+						<tr>
+							<th>EmpId</th>
+							<th>FullName</th>
+							<th>ManagerId</th>
+							<th>DateOfJoining</th>
+						</tr>
+						<tr>
+							<td>121</td>
+							<td>John Snow</td>
+							<td>321</td>
+							<td>01/31/2014</td>
+						</tr>
+						<tr>
+							<td>321</td>
+							<td>Walter White</td>
+							<td>986</td>
+							<td>01/30/2015</td>
+						</tr>
+						<tr>
+							<td>421</td>
+							<td>Kuldeep Rana</td>
+							<td>876</td>
+							<td>27/11/2016</td>
+						</tr>
+					</table>
+					<br>
+					Table: EmployeeSalary
+					<table class="tbl">
+						<tr>
+							<th>EmpId</th>
+							<th>Project</th>
+							<th>Salary</th>
+						</tr>
+						<tr>
+							<td>121</td>
+							<td>P1</td>
+							<td>8000</td>
+						</tr>
+						<tr>
+							<td>321</td>
+							<td>P2</td>
+							<td>1000</td>
+						</tr>
+						<tr>
+							<td>421</td>
+							<td>P1</td>
+							<td>12000</td>
+						</tr>
+					</table>
+					<br>
+					Write a SQL query to fetch employee names having salary greater than or equal to 5000 and less than or equal 10000.
+					<br>
+					<br>
+					<strong>
+					SELECT FullName <br>
+					FROM EmployeeDetails <br>
+					WHERE EmpID IN <br>
+					( SELECT EmpID <br>
+					FROM EmployeeSalary <br>
+					WHERE Salary BETWEEN 5000 AND 10000 );
+					</strong>
+					<br>
+					<br>
+
+
+			</div>	
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
+			</div>
+		</div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
