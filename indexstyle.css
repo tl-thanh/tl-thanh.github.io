@@ -1,347 +1,76 @@
-.simg {
-   width: 70%;
-   height: 70%;
- }
-
-.pgheader {
-  margin-bottom: 0!important;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.projbkg {background-color: #e6e6e6;}
-
-.resumebkg {background-color:   #e6e6e6;}
-
-#resume {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-}
-
-#resume .resume-header {
-    text-align: center;
-}
-
-#resume .timeline-wrap {
-    position: relative;
-    margin-top: auto;
-    /*margin-bottom: auto;*/
-}
-
-#resume .timeline-block {
-    position: relative;
-    padding-top: 1.5rem;
-}
-
-.section-intro {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    /*margin-bottom: 1rem;*/
-    position: relative;
-}
-
-.row {
-    width: 94%;
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.carousel-inner {
-  width: 80%;
-  margin: auto;
-  }
-
-#resume .timeline-ico {
-    height: 4.8rem;
-    width: 4.8rem;
-    line-height: 4.8rem;
-    border-radius: 50%;
-    text-align: center;
-    color: #e6f2ff;
-    position: absolute;
-    left: 47%;
-    top: .9rem;
-    margin-left: -2.4rem;
-}
-
-#resume .timeline-header {
-    float: left;
-    width: 47%;
-    padding-right: 50px;
-    text-align: right;
-    position: absolute;
-    top: .2rem;
-}
-
-#resume .timeline-content {
-    margin-left: 47%;
-    padding-left: 50px;
-}
-
-.edubkg {background-color: #e6e6e6;}
-
-.skillbkg {background-color: #e6e6e6;}
-
-.jobtitle {
-  margin-bottom: 0!important;
-  /*text-transform: uppercase;*/
-  font-weight: 700;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.subheading {
-  margin-bottom: 0!important;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.35rem;
-}
-
-.marbottom {margin-bottom: 1rem!important;}
-
-.text-right {text-align: right!important;}
-
-.text-grey {color:#778899;}
+/*Defining Font*/
 
 .body-text {font-family: 'Saira Extra Condensed',serif;}
 
-.alignleft { padding: 4px; margin: 0 7px 2px 0; display: inline; float: left; }
+/*Index Page*/
 
-.aligncenter { padding: 4px; margin: 0 7px 2px 0; display: inline; float: center; }
-
-.bkground {background-color: #e6e6e6;}
-
-.col-md-12, .col-sm-12, .col-xs-12 {background-color: #e6e6e6}
-
-.top-buffer { margin-top:50px;}
-
-.table {border-collapse: collapse; border: 2px black solid; font: 12px sans-serif;}
-
-.td {border: 1px black solid; padding: 5px;}
+.alignleft {
+	padding: 5px; margin: 0 7px 2px 0; display: inline; float: left; border-radius: 15px;
+}
 
 #footer {
     position: fixed;
+    z-index: 999;
     right:0;
     bottom:0;
 }
 
-.chart-skills {
-  position: relative;
-  width: 350px;
-  height: 175px;
+.bodyimg {
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
 
-.chart-skills li {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: inherit;
-  height: inherit;
-  border: 90px solid;
-  border-top: none;
-  border-bottom-left-radius: 175px;
-  border-bottom-right-radius: 175px;
-  transform-origin: 50% 0;
-  animation-fill-mode: forwards;
-  animation-duration: .4s;
-  animation-timing-function: linear;
-}
 
-.chart-skills li:nth-child(1) {
-  z-index: 9;
-  border-color: green;
-  animation-name: rotate-one;
-}
- 
-.chart-skills li:nth-child(2) {
-  z-index: 9;
-  border-color: firebrick;
-  animation-name: rotate-two;
-  animation-delay: .4s;
-}
- 
-.chart-skills li:nth-child(3) {
-  z-index: 92;
-  border-color: steelblue;
-  animation-name: rotate-three;
-  animation-delay: .8s;
-}
- 
-.chart-skills li:nth-child(4) {
-  z-index: 91;
-  border-color: orange;
-  animation-name: rotate-four;
-  animation-delay: 1.2s;
-}
+.bkg {background-color: #e6e6e6;}
 
-.chart-skills li:nth-child(5) {
-  z-index: 89;
-  border-color: purple;
-  animation-name: rotate-five;
-  animation-delay: 1.6s;
-}
-
-.chart-skills li:nth-child(6) {
-  z-index: 88;
-  border-color: pink;
-  animation-name: rotate-six;
-  animation-delay: 2.0s;
-}
-
-@keyframes rotate-one {
-  100% {
-    transform: rotate(60deg);
-  }
-}
-
-@keyframes rotate-two {
-  0% {
-    transform: rotate(60deg);
-  }
-  100% {
-    transform: rotate(120deg);
-  }
-}
- 
-@keyframes rotate-three {
-  0% {
-    transform: rotate(120deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
- 
-@keyframes rotate-four {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(240deg);
-  }
-}
-
-@keyframes rotate-five {
-  0% {
-    transform: rotate(240deg);
-  }
-  100% {
-    transform: rotate(300deg);
-  }
-}
-
-@keyframes rotate-six {
-  0% {
-    transform: rotate(300deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.chart-skills li {
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-}
-.chart-skills span {
-  position: absolute;
-  font-size: 1.7rem;
-}
- 
-.chart-skills li:nth-child(1) span {
-  top: 20px;
-  left: -65px;
-  transform: rotate(-60deg);
-}
- 
-.chart-skills li:nth-child(2) span {
-  top: 25px;
-  left: -55px;
-  transform: rotate(-120deg);
-}
- 
-.chart-skills li:nth-child(3) span {
-  top: 35px;
-  left: -60px;
-  transform: rotate(-180deg);
-}
- 
-.chart-skills li:nth-child(4) span {
-  top: 40px;
-  left: -75px;
-  transform: rotate(-240deg);
-}
-
-.chart-skills li:nth-child(5) span {
-  top: 35px;
-  left: -75px;
-  transform: rotate(-300deg);
-}
-
-.chart-skills li:nth-child(6) span {
-  top: 20px;
-  left: -65px;
-  transform: rotate(-360deg);
-}
-
-.pbartext {text-align: left;}
-
-@media screen and (max-width: 575px) {
-  h1{font-size: 35px;}
-  h2{font-size: 20px;}
-  h3{font-size: 15px;}
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  h1{font-size: 35px;}
-  h2{font-size: 25px;}
-  h3{font-size: 15px;}
-}
+/*Nav Bar CSS*/
 
 .navbar-custom {
-  background-color: #0088cc;
-  border-color: #0072ab;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#00aaff), to(#0088cc));
-  background-image: -webkit-linear-gradient(top, #00aaff, 0%, #0088cc, 100%);
-  background-image: -moz-linear-gradient(top, #00aaff 0%, #0088cc 100%);
-  background-image: linear-gradient(to bottom, #00aaff 0%, #0088cc 100%);
+  background-color: #77667a;
+  border-color: #655768;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#917f94), to(#77667a));
+  background-image: -webkit-linear-gradient(top, #917f94, 0%, #77667a, 100%);
+  background-image: -moz-linear-gradient(top, #917f94 0%, #77667a 100%);
+  background-image: linear-gradient(to bottom, #917f94 0%, #77667a 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff00aaff', endColorstr='#ff0088cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff917f94', endColorstr='#ff77667a', GradientType=0);
 }
 .navbar-custom .navbar-brand {
   color: #ffffff; font-size: 50px;
 }
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
-  color: #e6e6e6  background-color: transparent;
+.navbar-custom .navbar-brand:focus 
+{
+  color: #e6e6e6;
+  background-color: transparent;
 }
 .navbar-custom .navbar-text {
   color: #ffffff;
 }
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #655768;
+}
 .navbar-custom .navbar-nav > li > a {
   color: #ffffff;
+  border-left: 1px solid #655768;
 }
 .navbar-custom .navbar-nav > li > a:hover,
 .navbar-custom .navbar-nav > li > a:focus {
-  color: #13ccc1;
+  color: #c0c0c0;
   background-color: transparent;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: #13ccc1;
-  background-color: #0072ab;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0072ab), to(#0094de));
-  background-image: -webkit-linear-gradient(top, #0072ab, 0%, #0094de, 100%);
-  background-image: -moz-linear-gradient(top, #0072ab 0%, #0094de 100%);
-  background-image: linear-gradient(to bottom, #0072ab 0%, #0094de 100%);
+  color: #c0c0c0;
+  background-color: #655768;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#655768), to(#806e84));
+  background-image: -webkit-linear-gradient(top, #655768, 0%, #806e84, 100%);
+  background-image: -moz-linear-gradient(top, #655768 0%, #806e84 100%);
+  background-image: linear-gradient(to bottom, #655768 0%, #806e84 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0072ab', endColorstr='#ff0094de', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff655768', endColorstr='#ff806e84', GradientType=0);
 }
 .navbar-custom .navbar-nav > .disabled > a,
 .navbar-custom .navbar-nav > .disabled > a:hover,
@@ -361,43 +90,43 @@
 }
 .navbar-custom .navbar-collapse,
 .navbar-custom .navbar-form {
-  border-color: #0070a8;
+  border-color: #645667;
 }
 .navbar-custom .navbar-nav > .dropdown > a:hover .caret,
 .navbar-custom .navbar-nav > .dropdown > a:focus .caret {
-  border-top-color: #13ccc1;
-  border-bottom-color: #13ccc1;
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
 }
 .navbar-custom .navbar-nav > .open > a,
 .navbar-custom .navbar-nav > .open > a:hover,
 .navbar-custom .navbar-nav > .open > a:focus {
-  background-color: #0072ab;
-  color: #13ccc1;
+  background-color: #655768;
+  color: #c0c0c0;
 }
 .navbar-custom .navbar-nav > .open > a .caret,
 .navbar-custom .navbar-nav > .open > a:hover .caret,
 .navbar-custom .navbar-nav > .open > a:focus .caret {
-  border-top-color: #13ccc1;
-  border-bottom-color: #13ccc1;
+  border-top-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
 }
 .navbar-custom .navbar-nav > .dropdown > a .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
-@media (max-width: 767px) {
+@media (max-width: 767) {
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
     color: #ffffff;
   }
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #13ccc1;
+    color: #c0c0c0;
     background-color: transparent;
   }
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #13ccc1;
-    background-color: #0072ab;
+    color: #c0c0c0;
+    background-color: #655768;
   }
   .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -410,5 +139,5 @@
   color: #ffffff;
 }
 .navbar-custom .navbar-link:hover {
-  color: #13ccc1;
+  color: #c0c0c0;
 }
