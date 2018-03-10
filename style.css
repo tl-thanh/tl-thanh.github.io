@@ -16,7 +16,7 @@
 }
 
 .bodyimg {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: right top;
     background-attachment: fixed;
 }
