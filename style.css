@@ -107,6 +107,13 @@
     position: relative;
 }
 
+/*Projects CSS*/
+
+.carousel-inner {
+  width: 80%;
+  margin: auto;
+}
+
 /*Nav Bar CSS*/
 
 .navbar-custom {
