@@ -107,6 +107,11 @@
     position: relative;
 }
 
+.simg {
+   width: 70%;
+   height: 70%;
+ }
+
 /*Projects CSS*/
 
 .carousel-inner {
