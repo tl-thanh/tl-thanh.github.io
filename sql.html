@@ -60,42 +60,43 @@
 					<br>
 					Table: Employees
 					<br>
+					<div style="overflow-x:auto;">
 					<table class="tbl">
-						  <tr>
+						<tr>
 						    <th>ID</th>
 						    <th>FirstName</th>
 						    <th>LastName</th>
 						    <th>Gender</th>
 						    <th>Salary</th>
-						  </tr>
-						  <tr>
+						</tr>
+						<tr>
 						    <td>1</td>
 						    <td>Ben</td>
 						    <td>Hoskins</td>
 						    <td>Male</td>
 						    <td>70000</td>
-						  </tr>
-						  <tr>
+						</tr>
+						<tr>
 						    <td>2</td>
 						    <td>Mark</td>
 						    <td>Hastings</td>
 						    <td>Male</td>
 						    <td>60000</td>
-						  </tr>
-						  <tr>
+						</tr>
+						<tr>
 						    <td>3</td>
 						    <td>Alice</td>
 						    <td>Pound</td>
 						    <td>Female</td>
 						    <td>45000</td>
-						  </tr>
+						</tr>
 						    <tr>
 						    <td>4</td>
 						    <td>Lisa</td>
 						    <td>Romero</td>
 						    <td>Female</td>
 						    <td>70000</td>
-						  </tr>
+						</tr>
 					    <tr>
 						    <td>5</td>
 						    <td>Philip</td>
@@ -125,6 +126,7 @@
 						    <td>80000</td>
 					  	</tr>
 					</table>
+					</div>
 					<br>
 					* Using sub-query: N = the nth highest salary we are looking for
 					<br>
@@ -169,6 +171,7 @@
 					<br>
 					Table: users
 					<br>
+					<div style="overflow-x:auto;">
 					<table class="tbl">
 					  <tr>
 					    <th>user_id</th>
@@ -191,8 +194,10 @@
 					    <td>Lisa Romero</td>
 					  </tr>
 					</table>
+					</div>
 					<br>
 					Table: training_details
+					<div style="overflow-x:auto;">
 					<table class="tbl">
 						<tr>
 							<th>user_training_id</th>
@@ -285,12 +290,13 @@
 							<td>2015-08-03</td>
 						</tr>
 					</table>
+					</div>
 					<br>
 					<strong>
-					SELECT U.user_id, username, training_id, training_date, count(user_training_id) AS count <br>
+					SELECT U.user_id, username, training_id, training_date, count(training_id) AS count <br>
 					FROM users U JOIN training_details T <br>
 					ON T.user_id = U.user_id <br>
-					GROUP BY U.user_id, username, training_id, training_date <br>
+					GROUP BY U.user_id, training_id, training_date <br>
 					HAVING count(training_id) > 1 <br>
 					ORDER BY training_date DESC; <br>
 					</strong>
@@ -300,6 +306,7 @@
 					<br>
 					<br>
 					Table: EmployeeDetails
+					<div style="overflow-x:auto;">
 					<table class="tbl">
 						<tr>
 							<th>EmpId</th>
@@ -326,8 +333,10 @@
 							<td>27/11/2016</td>
 						</tr>
 					</table>
+					</div>
 					<br>
 					Table: EmployeeSalary
+					<div style="overflow-x:auto;">
 					<table class="tbl">
 						<tr>
 							<th>EmpId</th>
@@ -350,6 +359,7 @@
 							<td>12000</td>
 						</tr>
 					</table>
+					</div>
 					<br>
 					<strong>
 					SELECT FullName <br>
