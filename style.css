@@ -1,8 +1,25 @@
-/*Defining Font*/
+/*Defining Font and Size*/
 
 .body-text {font-family: 'Saira Extra Condensed',serif;}
 
+@media screen and (max-width: 575px) {
+  h1{font-size: 35px;}
+  h2{font-size: 25px;}
+  h3{font-size: 20px;}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  h1{font-size: 35px;}
+  h2{font-size: 25px;}
+  h3{font-size: 20px;}
+}
+
 /*Index Page*/
+
+.imglogo {
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+}
 
 .alignleft {
 	padding: 5px; margin: 0 7px 2px 0; display: inline; float: left; border-radius: 15px;
