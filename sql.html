@@ -291,7 +291,7 @@
 					FROM users U JOIN training_details T <br>
 					ON T.user_id = U.user_id <br>
 					GROUP BY U.user_id, username, training_id, training_date <br>
-					HAVING count(user_training_id) > 1 <br>
+					HAVING count(training_id) > 1 <br>
 					ORDER BY training_date DESC; <br>
 					</strong>
 					<br>
