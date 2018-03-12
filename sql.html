@@ -371,9 +371,23 @@
 					</strong>
 					<br>
 					<br>
+					<strong>Q: </strong>Write a SQL query to fetch duplicate records from the 2 tables above.
+					<br>
+					<br>
+					<strong>
+					SELECT EmpId, Project, Salary, COUNT(*) <br>
+					FROM EmployeeSalary <br>
+					GROUP BY EmpId, Project, Salary <br>
+					HAVING COUNT(*) > 1 <br>
+					</strong>
+					<br>
+					<br>
 					More queries to be added soon ... 
 					</h4>
 					<h3><strong><a href="https://github.com/tl-thanh/sql-homework">*Click here for my Github Repository that contains SQL Queries from class assignments*</a></strong></h3>
+					<br>
+					<br>
+
 
 			</div>
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1">
