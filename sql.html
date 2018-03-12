@@ -133,9 +133,11 @@
 					<strong>
 					SELECT Top 1 Salary <br>
 					FROM <br>
-					(SELECT DISTINCT TOP N Salary <br>
+					( <br>
+					SELECT DISTINCT TOP N Salary <br>
 					FROM Employees <br>
-					ORDER BY Salary DESC) tbl1 <br>
+					ORDER BY Salary DESC <br>
+					) tbl1 <br>
 					ORDER BY Salary; <br>
 					</strong>
 					<br>
@@ -144,8 +146,8 @@
 					<strong>
 					WITH tbl1 AS <br>
 					( <br>
-						SELECT Salary, DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRank <br>
-						FROM Employees <br>
+					SELECT Salary, DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRank <br>
+					FROM Employees <br>
 					) <br>
 					SELECT TOP 1 Salary <br>
 					FROM tbl1 <br>
@@ -365,9 +367,11 @@
 					SELECT FullName <br>
 					FROM EmployeeDetails <br>
 					WHERE EmpID IN <br>
-					( SELECT EmpID <br>
+					( <br>
+					SELECT EmpID <br>
 					FROM EmployeeSalary <br>
-					WHERE Salary BETWEEN 5000 AND 10000 );
+					WHERE Salary BETWEEN 5000 AND 10000 <br>
+					); <br>
 					</strong>
 					<br>
 					<br>
@@ -385,11 +389,13 @@
 					<br>
 					<strong>
 					DELETE FROM EmployeeSalary <br>
-					WHERE EmpId IN ( <br>
+					WHERE EmpId IN <br>
+					( <br>
 					SELECT EmpId <br>
 					FROM EmployeeSalary <br>
 					GROUP BY Project, Salary <br>
-					HAVING COUNT(*) > 1)); <br>
+					HAVING COUNT(*) > 1 <br>
+					); <br>
 					</strong>
 					<br>
 					<br>
@@ -397,7 +403,8 @@
 					<br>
 					<strong>
 					SELECT E.EmpId, E.Project, E.Salary <br>
-					FROM ( <br>
+					FROM <br>
+					( <br>
     				SELECT *, Row_Number() OVER(ORDER BY EmpId) AS RowNumber <br>
     				FROM EmployeeSalary <br>
 					) E <br>
