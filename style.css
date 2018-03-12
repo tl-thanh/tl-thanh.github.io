@@ -89,6 +89,20 @@
     margin-left: -2.4rem;
 }
 
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.col-twelve {
+    width: 100%;
+}
+
 #resume .timeline-header {
     float: left;
     width: 47%;
@@ -129,6 +143,28 @@
    width: 70%;
    height: 70%;
  }
+
+
+.button {
+    background-color: white; 
+    border: 2px solid #4d2574;
+    border-radius: 8px;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #B0C4DE;
+    color: black;
+}
 
 /*Projects CSS*/
 
