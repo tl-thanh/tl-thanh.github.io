@@ -392,7 +392,7 @@
 					<br>
 					<br>
 					<strong>
-					SELECT EmpId, FullName, DateOfJoining, DATEDIFF(DAY, DateOfJoining, '2018-01-01') AS DaysJoined <br>
+					SELECT EmpId, FullName, DateOfJoining, DATEDIFF(DateOfJoining, '2018-01-01') AS DaysJoined <br>
 					FROM EmployeeDetails <br>
 					ORDER BY EmpID <br>
 					</strong>
