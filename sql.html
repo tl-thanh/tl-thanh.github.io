@@ -386,11 +386,13 @@
 					</strong>
 					<br>
 					<br>
-					<strong>Q: </strong>Find the number of days each employees joined the company from today.
+					<strong>Q: </strong>Find the number of days each employees joined the company from date A.
+					<br>
+						Assuming date A = 01-01-2018
 					<br>
 					<br>
 					<strong>
-					SELECT EmpId, FullName, DateOfJoining, DATEDIFF(DAY, DateOfJoining, GETDATE()) AS DaysJoined <br>
+					SELECT EmpId, FullName, DateOfJoining, DATEDIFF(DAY, DateOfJoining, '2018-01-01') AS DaysJoined <br>
 					FROM EmployeeDetails <br>
 					ORDER BY EmpID <br>
 					</strong>
