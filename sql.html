@@ -386,6 +386,16 @@
 					</strong>
 					<br>
 					<br>
+					<strong>Q: </strong>Find the number of days of each employees from date joined.
+					<br>
+					<br>
+					<strong>
+					SELECT EmpId, FullName, DateOfJoining, DATEDIFF(DAY, DateOfJoinging, GETDATE()) AS DaysJoined <br>
+					FROM EmployeeDetails <br>
+					ORDER BY EmpID <br>
+					</strong>
+					<br>
+					<br>			
 					<strong>Q: </strong>Write a SQL query to remove duplicates from a table without using temporary table.
 					<br>
 					<br>
