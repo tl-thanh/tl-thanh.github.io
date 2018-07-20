@@ -219,7 +219,8 @@
   color: #ffffff; font-size: 50px;
 }
 .navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus {
+.navbar-custom .navbar-brand:focus 
+{
   color: #e6e6e6;
   background-color: transparent;
 }
