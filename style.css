@@ -34,8 +34,8 @@
 .bodyimg {
     background-image: url("https://tl-thanh.github.io/images/BB.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+/* background-size: cover; */
+    background-size: 100% 100%;
     background-attachment: fixed;
     margin-bottom: 10px;
 }
