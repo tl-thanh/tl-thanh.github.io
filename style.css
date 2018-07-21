@@ -34,10 +34,10 @@
 .bodyimg {
     background-image: url("https://tl-thanh.github.io/images/BB.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+    background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
